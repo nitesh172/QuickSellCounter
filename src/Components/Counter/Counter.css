@@ -1,0 +1,97 @@
+.mainBox {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 39px 11px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-left: 3px;
+  gap: 10px;
+}
+
+.loading {
+  width: 16px;
+  height: 16px;
+}
+
+.loading img {
+  width: 100%;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.loadingText {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.buttonBox {
+  display: flex;
+  margin-top: 3px;
+  flex-direction: row;
+}
+
+.buttonBox div {
+  width: 60px;
+  font-size: 21px;
+  padding: 13px 0 14px 0;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  color: #b34040;
+  border: 1.5px solid #b34040;
+}
+
+.buttonBox div:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 0.75px solid #b34040;
+  cursor: pointer;
+}
+
+.buttonBox div:nth-child(1):hover {
+  background-color: #b34040;
+  color: #ffffff;
+}
+
+.buttonBox div:nth-child(2) {
+  border-left: 0.75px solid #b34040;
+  border-right: 0.75px solid #b34040;
+  outline: none;
+  text-overflow: clip;
+  word-wrap: normal;
+  overflow: hidden;
+  background-color: #fbe9e9;
+}
+
+.buttonBox div:nth-child(3) {
+  border-left: 0.75px solid #b34040;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #b34040;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttonBox div:nth-child(3):hover {
+  background-color: #ffffff;
+  color: #b34040;
+}
+
+.counterValue {
+  font-size: 12px;
+  padding-left: 3px;
+  font-weight: 500;
+}
