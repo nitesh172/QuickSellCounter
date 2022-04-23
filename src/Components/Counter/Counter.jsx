@@ -26,7 +26,7 @@ const Counter = () => {
 
   const updateCountFun = (action) => {
     dispatch(setLoadingTrue());
-    if (count < 1000 && action === "plus") {
+    if (count < 1000 || action === "minus") {
       axios
         .put(
           "https://interview-8e4c5-default-rtdb.firebaseio.com/front-end.json",
@@ -37,6 +37,7 @@ const Counter = () => {
         });
     } else {
       alert("MAX Limit Reached");
+      getCountFun();
     }
   };
 
